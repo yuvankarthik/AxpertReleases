@@ -1,0 +1,318 @@
+ Traces of Consumer Message are  29-01-2024 17:46:58{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/products.json",
+        "method": "POst",
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        },
+       "requeststring": {
+    "product": {
+        "title": "test product",
+        "body_html": "<strong>Good snowboard!</strong>",
+        "vendor": "Burton",
+        "product_type": "Snowboard",
+        "status": "active",
+        "published": true,
+        "images": [
+            {
+                "attachment": "R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\n"
+            }
+        ]
+    }
+}
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:00{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/orders.json",
+        "method": "GET",
+        "parameterstring": {
+            "created_at_min": "2024-01-17T00:00:11-04:00"
+        },
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        }
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:00{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/orders.json",
+        "method": "GET",
+        "parameterstring": {
+            "created_at_min": "2024-01-17T00:00:11-04:00"
+        },
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        }
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:00{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/orders.json",
+        "method": "GET",
+        "parameterstring": {
+            "created_at_min": "2024-01-17T00:00:11-04:00"
+        },
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        }
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:00{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/orders.json",
+        "method": "GET",
+        "parameterstring": {
+            "created_at_min": "2024-01-17T00:00:11-04:00"
+        },
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        }
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:01{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/orders.json",
+        "method": "GET",
+        "parameterstring": {
+            "created_at_min": "2024-01-17T00:00:11-04:00"
+        },
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        }
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:01{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/orders.json",
+        "method": "GET",
+        "parameterstring": {
+            "created_at_min": "2024-01-17T00:00:11-04:00"
+        },
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        }
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:01{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/orders.json",
+        "method": "GET",
+        "parameterstring": {
+            "created_at_min": "2024-01-17T00:00:11-04:00"
+        },
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        }
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:01{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/orders.json",
+        "method": "GET",
+        "parameterstring": {
+            "created_at_min": "2024-01-17T00:00:11-04:00"
+        },
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        }
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:01{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/orders.json",
+        "method": "GET",
+        "parameterstring": {
+            "created_at_min": "2024-01-17T00:00:11-04:00"
+        },
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        }
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:01{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/orders.json",
+        "method": "GET",
+        "parameterstring": {
+            "created_at_min": "2024-01-17T00:00:11-04:00"
+        },
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        }
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:03{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/products.json",
+        "method": "POst",
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        },
+       "requeststring": {
+    "product": {
+        "title": "test product",
+        "body_html": "<strong>Good snowboard!</strong>",
+        "vendor": "Burton",
+        "product_type": "Snowboard",
+        "status": "active",
+        "published": true,
+        "images": [
+            {
+                "attachment": "R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\n"
+            }
+        ]
+    }
+}
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:03{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/products.json",
+        "method": "POst",
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        },
+       "requeststring": {
+    "product": {
+        "title": "test product",
+        "body_html": "<strong>Good snowboard!</strong>",
+        "vendor": "Burton",
+        "product_type": "Snowboard",
+        "status": "active",
+        "published": true,
+        "images": [
+            {
+                "attachment": "R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\n"
+            }
+        ]
+    }
+}
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:03{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/products.json",
+        "method": "POst",
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        },
+       "requeststring": {
+    "product": {
+        "title": "test product",
+        "body_html": "<strong>Good snowboard!</strong>",
+        "vendor": "Burton",
+        "product_type": "Snowboard",
+        "status": "active",
+        "published": true,
+        "images": [
+            {
+                "attachment": "R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\n"
+            }
+        ]
+    }
+}
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:03{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/products.json",
+        "method": "POst",
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        },
+       "requeststring": {
+    "product": {
+        "title": "test product",
+        "body_html": "<strong>Good snowboard!</strong>",
+        "vendor": "Burton",
+        "product_type": "Snowboard",
+        "status": "active",
+        "published": true,
+        "images": [
+            {
+                "attachment": "R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\n"
+            }
+        ]
+    }
+}
+    }
+}
+ Traces of Consumer Message are  29-01-2024 17:47:03{
+    "queuename": "ShopifyOutboundQueue",
+    "queuedata": "",
+    "queuejson": {
+        "project": "qapost113",
+        "url": "https://b843cb-2.myshopify.com/admin/api/2024-01/products.json",
+        "method": "POst",
+        "headerstring": {
+            "X-Shopify-Access-Token": "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"
+        },
+       "requeststring": {
+    "product": {
+        "title": "test product",
+        "body_html": "<strong>Good snowboard!</strong>",
+        "vendor": "Burton",
+        "product_type": "Snowboard",
+        "status": "active",
+        "published": true,
+        "images": [
+            {
+                "attachment": "R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\n"
+            }
+        ]
+    }
+}
+    }
+}
+ Traces of Consumer Message are  29-01-2024 18:02:39{"queuedata":"Shopify","queuejson":null,"queuename":"ShopifyOutboundQueue","signalrclient":"","timespandelay":0,"trace":false,"responsequeuename":null}
+ Traces of Consumer Message are  29-01-2024 18:02:39{"queuedata":"Shopify","queuejson":{"project":{"ValueKind":3},"url":{"ValueKind":3},"method":{"ValueKind":3},"parameterstring":{"ValueKind":1},"headerstring":{"ValueKind":1}},"queuename":"ShopifyOutboundQueue","signalrclient":"","timespandelay":0,"trace":false,"responsequeuename":null}
+ Traces of Consumer Message are  29-01-2024 18:02:39{"queuedata":"Shopify","queuejson":{"project":{"ValueKind":3},"url":{"ValueKind":3},"method":{"ValueKind":3},"parameterstring":{"ValueKind":1},"headerstring":{"ValueKind":1}},"queuename":"ShopifyOutboundQueue","signalrclient":"","timespandelay":0,"trace":false,"responsequeuename":null}
+ Traces of Consumer Message are  29-01-2024 18:18:02{"queuedata":"Shopify","queuejson":{"project":"qapost113","url":"https://b843cb-2.myshopify.com/admin/api/2024-01/orders.json","method":"GET","parameterstring":{"created_at_min":"2024-01-17T00:00:11-04:00"},"headerstring":{"X-Shopify-Access-Token":"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"}},"queuename":"ShopifyOutboundQueue","signalrclient":"","timespandelay":0,"trace":false,"responsequeuename":null}
+ Traces of Consumer Message are  29-01-2024 18:18:39{"queuedata":"Shopify","queuejson":{"project":"qapost113","url":"https://b843cb-2.myshopify.com/admin/api/2024-01/products.json","method":"POst","headerstring":{"X-Shopify-Access-Token":"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"},"requeststring":{"product":{"title":"test product","body_html":"\u003Cstrong\u003EGood snowboard!\u003C/strong\u003E","vendor":"Burton","product_type":"Snowboard","status":"active","published":true,"images":[{"attachment":"R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\n"}]}}},"queuename":"ShopifyOutboundQueue","signalrclient":"","timespandelay":0,"trace":false,"responsequeuename":null}
+ Traces of Consumer Message are  29-01-2024 18:36:25{"queuedata":"Shopify","queuejson":{"project":"qapost113","url":"https://b843cb-2.myshopify.com/admin/api/2024-01/orders/{{orderid}}.json","method":"GET","headerstring":{"X-Shopify-Access-Token":"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"},"urlparams":{"orderid":"5673282470172"}},"queuename":"ShopifyOutboundQueue","signalrclient":"","timespandelay":0,"trace":false,"responsequeuename":null}

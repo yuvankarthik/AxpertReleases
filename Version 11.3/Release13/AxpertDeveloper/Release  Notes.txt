@@ -1,0 +1,8 @@
+Release Notes:
+============
+	• Task ID-011576 -PayAzzure- Global tables accessible in all database calls within both the app schema and def schema. Currently, we are unable to access global tables from multi select fields and it is throwing an error "relation table_name does not exist".
+	• Task ID-011584 -Nuwab- When saving any form from Developer Studio, the AXToolbar table is not updated at runtime for that particular form. This issue occurs because a reserved keyword, "key," is being used as a column name in the AXToolbar table.
+	• Task ID-011552 -Support(trustline)- Issue:  When we enable the ListView in the developer mode, unable to save the screen, and the 'Structure Saved' message does not appear. However, if we disable the ListView, we are able to save the structures. This issue occurs for the Trustline customer and can be reproduced in our instance as well.Please find the details below.
+	• Task ID-011559 -Support(Dilmha)-Issue: When enabling the ListView option, the structure is not saving properly.
+	• Task ID-011591 -QA- Issue Description: Global Schema Table is not working in Multiselect field
+

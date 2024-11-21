@@ -1,0 +1,17 @@
+Release Notes:
+============
+	• Task ID-011071 -Zishta- Issue Description:In DEVSTUDIO- With events like Before Save Event/After save transaction, user is unable to save the InitGrid function.Throwing error as  "InitGrid is not allowed in selected event"
+	• Task ID-011028 -Zishta- Issue Description: Data type of a field changed from character to numeric and the same field is used in query, it consider the field as character instead of numeric When executed in SQL Editor,Facing error as "operator does not exist: numeric = character varying" 
+	• Task ID-011073 -Zishta- Enabling the 'normalized field' option for a normal dropdown field (checking the 'normalized field' property [source key true]) didn't change the field's data type to numeric in the backend; it remained as character data type. 
+	• Task ID-011023 -Zishta- After converting a form, every time a user saves it on the devsite, it appears in hidden mode in the Arrange Menu. To make it visible during runtime, the user has to manually unhide it in the Arrange Menu each time.
+	• Task ID-011072 -Zishta- DC tables are not recreated if the respective table is dropped from the backend to enable integrity constraints for normalized fields. i) DC Tables are not created when we drop the table from the backend and then call save structure.ii) Even after creating the table manually, if we add a field, then the field is not created in the backend.
+	• Task ID-011066 -DOP- User is unable to submit the Upload file types developer option with the "Select All" File type.
+	• Task ID-011003 -QA- After Open a new constant/variable/application parameter, the New button's tooltip message is displayed as "New PrintDefinition."
+	• Task ID-011065 -QA- Issue Description : If Upload file types developer option is having more than 7 formats then the File types field value is showing "All".
+	• Task ID-011068 -QA- Issue Description: DEVSITE-Script Field Suggestive Lists are overlapping
+	• Task ID-011069 -QA- Issue Description: DevSite-Scripts Field On click of Outside/ESC the Suggestive List is not disappearing
+	• Task ID-011032 -QA- Enhancement in tstruct grid functionality: A new property introduced for grid dc numeric fields named as 'Display Total' as checkbox. By default, the value of the checkbox is false. Once this property value is true (i.e.: Checkbox is ticked), the total value will be displayed in grid footer during runtime. 
+	• Task ID-011034 -QA- If the form control checkbox is ticked during the definition, Script definition screen is enhanced to display form control functions only.
+	• Task ID-011035 -QA- Db procedures defined for table type field is not working in axpert developer site.
+
+

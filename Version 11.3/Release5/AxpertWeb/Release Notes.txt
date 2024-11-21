@@ -1,0 +1,31 @@
+Release Notes:
+============
+	• Task ID-010928 -ALLSec-Issue Description: Dependency Checklist field is not filling properly based on the Master Field
+	• Task ID-010945 -Pay Azzure- Issue Description: Form Controls in PEG- Instead of only applying to that particular level in PEG, the user-defined form controls in PEG are applied to all levels in the process
+	• Task ID-010905 -Pay Azzure- Precondition - Create one simple text Field,  Pattern as 'isalphanumeric' and other field as 'isalpha'.Requirement - In both isalphanumeric and isalpha, double spaces should be consider as special characters and should not be allowed  to save.
+	• Task ID-010886 -Pay Azzure- Description : In Declare Investments and Calculate Tax - 'LoadFormAndData' is not loading the record during the formload event.
+	• Task ID-010946 -BDF- Issue Description :Form Data Validation while doing workflow approval 
+	• Task ID-010947 -BDF- Issue Description : Grid Attachment to Db issue, While saving grid attachments we are getting the error like "ORA-01459: invalid length for variable character string"
+	• Task ID-010954 -BDF- Issue Description: Screen Keeps on Loading when user closes the Popped-up Iview.
+	• Task ID-010930 - BDF - Advance Search - When dependent parameter having special characters like '&' then advance search is not working in Pick List & Select parameters.
+		○ Note: If dependent SQLs are expected to return more values (e.g., more than 100), it is recommended to change the parameter to a picklist or dynamic filter type for performance improvement.
+	• Task ID-010933 - BDF -	PickList with DynamicFilter  - When dependent parameters are changed then it is loading (refreshing) and it should not happen when dynamicfilter is used. Dynamic Filter parameter should refresh or show list of values on demand (by clicking the search in the parameter field).- performance impact.
+		○ Note: The picklist icon has been changed to differentiate it from the select with dynamic filter and picklist parameter types.
+	• Task ID-009124 - BDF -	picklist dropdown is listing only few values (10) but it contains totally 10000 records
+	• Task ID-010931 - BDF -	Advance Search in Pick List with DynamicFilter - Page navigation is not enabled in Pick List with DynamicFilter.
+		○ Note:
+			§ Advanced search has been enhanced to filter the data with minimum 3-character values.
+			§ Pagination option has been withdrawn from advanced search because data can now be searched with the complete result set.
+	• Task ID-010932 - BDF - Advance Search in pick list without DynamicFilter - Listing entire query results - Performance impact ( Instead of populating entire result set, populate the results based on search text inside advance search window).
+		○ Note: 
+			§ Advanced search has been enhanced to filter the data with minimum 3-character values.
+			§ Pagination option has been withdrawn from advanced search because data can now be searched with the complete result set.
+	• Task ID-010968 -Zishta- Iview/Listview not loading when the global setting is wrong for the variable(AxDbPagination)
+	• Task ID-010902 -Support- This is for Dilmah project, The Show Message Script is not working. While deleting row from the Grid it doesn’t display any messages.
+		○ Note: By using below hook functions can be customise to show custom messages while deleting selected rows or all rows from the grid.
+			§ AxBeforeAllGridRowsDelete(dcno) --> this hook can be used for while deleting all the rows
+			§ AxBeforeSingleGridRowDelete(dcno)--> this hook can be used for while deleting selected rows.
+	• Task ID-010634 - Support- In Web 11.2.1.0 Application Properties Mail Setting USER ID, PASSWORD has mandatory fields. Without userid,password we can't edit other settings. On the same Desktop 10.9 fix-7 without USER ID, PASSWORD Changes applied. Its working fine. In Web please give access for without email id also saved for others changes.
+	• Task ID-010891 -QA- SQL Post is not working through GenMap Posting.
+	• Task ID-010400 -QA- Requirement for Execute API: Need an option to upload pdf file as an input body form-data for API.
+

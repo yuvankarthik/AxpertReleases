@@ -1,0 +1,13 @@
+[
+    {
+        "title" : "Daily Quotes !",
+        "description" : "Great things happen to those who don't stop believing, trying, learning, and being grateful."
+        // "image" : "projectname folder/slider1.jpg",
+    
+    },    
+    {
+        "title" : "Daily Quotes",
+        "description" : "One of the things I learned the hard way was that it doesn’t pay to get discouraged. Keeping busy and making optimism a way of life can restore your faith in yourself."
+        // "image" : "projectname folder/slider2.jpg",
+    } 
+]

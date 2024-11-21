@@ -1,0 +1,223 @@
+﻿var xlresult;
+var xlGridfieldNames;
+var xlDcNo
+var xlRowCount;
+var IsgridummyRow =false;
+
+function ImportGridData() {
+    var crvalue = "";
+       
+    var arrImportcrValue = [];
+    var arrImportrecID = [];
+    var arrImportgridValues = [];
+    var keyimport = "";
+    var valueimport = "";
+    
+    if (callParentNew("gridDummyRowVal").length > 0) {
+        callParentNew("gridDummyRowVal").map(function (v) {
+            if (v.split("~")[0] == xlDcNo)
+                IsgridummyRow =true
+        });
+    }
+    for (var l = 1; l < xlresult.length; l++) {
+        if(xlRowCount > 0 && !IsgridummyRow){
+            var excelRowCountcheck =xlRowCount + l;
+            crvalue  += "i" + excelRowCountcheck + ",";
+            arrImportrecID.push({ n: xlGridfieldNames[0], v: "0", r: excelRowCountcheck.toString(), t: "s" });
+        }
+        else{
+            crvalue += "i" + l + ",";
+            arrImportrecID.push({ n: xlGridfieldNames[0], v: "0", r: l.toString(), t: "s" });
+        }
+           
+        for (var k = 0; k < xlresult[l].length; k++) {
+            valueimport = typeof xlresult[l][k] != "undefined" ? xlresult[l][k] : "";
+            keyimport = xlresult[0][k];
+            if (keyimport.indexOf('(') > -1 && keyimport.endsWith(')')) {
+                keyimport = keyimport.split('(')[1].split(')')[0];
+            }
+
+            if (valueimport != "")
+                valueimport = valueimport.toString();
+            if(xlRowCount > 0 && !IsgridummyRow){
+                var excelRowCount =xlRowCount + l;
+                arrImportgridValues.push({ n: keyimport, v: valueimport, r: excelRowCount.toString(), t: "s" });
+            }
+            else
+                arrImportgridValues.push({ n: keyimport, v: valueimport, r: l.toString(), t: "s" });
+        }
+    }
+    crvalue = crvalue.slice(0, -1);
+    arrImportcrValue.push({ n: "DC" + xlDcNo, v: xlDcNo, cr: crvalue, t: "dc", hasdatarows: "yes" });
+    var xlFinalimport = [];
+    xlFinalimport = xlFinalimport.concat(arrImportcrValue, arrImportrecID, arrImportgridValues);
+    callParentNew("AxActiveDc=", xlDcNo);
+    try{
+        if (callParentNew("gridDummyRowVal").length > 0) {
+            callParentNew("gridDummyRowVal").map(function (v) {
+                if (v.split("~")[0] == xlDcNo)
+                    callParentNew("gridDummyRowVal").splice($.inArray(v, callParentNew("gridDummyRowVal")), 1);
+            });
+        }
+    }
+    catch (ex) { }
+    // }
+    parent.ExecData(xlFinalimport, "LoadData", true);
+    callParentNew("closeModalDialog()", "function");
+    var rowCount = parent.$("#gridHd" + xlDcNo + " tbody tr").length;// xlresult.length - 1;
+    var rowno = "";
+    let _AxpFormula = false;
+    for (var k = 1; k <= rowCount; k++) {
+        callParentNew("AxActiveRowNo=", k);
+        if (k <= 9){
+            rowno = "00" + k;
+        }
+        else if (k > 9 && k <= 99) {
+            rowno = "0" + k;
+        }
+        else {
+            rowno = k;
+        }
+        for (var i = 0; i < xlGridfieldNames.length; i++) {
+            if (xlGridfieldNames[i].toLowerCase() == "axp_formula")
+                _AxpFormula = true;
+            var fldName = xlGridfieldNames[i] + rowno + "F" + xlDcNo;
+            var fldIndex = $j.inArray(xlGridfieldNames[i], parent.FNames);
+            if (parent.FFieldHidden[fldIndex] == "True") {
+                parent.EvaluateAxFunction(xlGridfieldNames[i], fldName, rowno + "F" + xlDcNo);
+                parent.EvaluateExpressions(fldName);
+            }
+        }
+    }
+    if (_AxpFormula) {
+        rowno = "";
+        let _fldIndex = parent.GetFieldIndex('axp_formula');
+        let _fldName = parent.FNames[_fldIndex];
+        for (var l = 1; l <= rowCount; l++) {
+            if (l <= 9) {
+                rowno = "00" + l;
+            }
+            else if (l > 9 && l <= 99) {
+                rowno = "0" + l;
+            }
+            else {
+                rowno = l;
+            }
+            let _fldObj = _fldName + rowno + "F" + xlDcNo;
+            parent.ValidateFldValFormula(parent.$("#" + _fldObj), _fldIndex, _fldName);
+        }
+    }
+}
+
+
+
+$(() => {
+    $("#excelimport").click(function () {
+        if (callParentNew("gridDummyRowVal").length > 0) {
+            callParentNew("gridDummyRowVal").map(function (v) {
+                if (v.split("~")[0] == xlDcNo)
+                    IsgridummyRow =true
+            });
+        }
+        if(xlRowCount > 0 && !(IsgridummyRow)){
+            var ConfirmDeleteCB = $.confirm({
+                theme: 'modern',
+                title: appGlobalVarsObject.lcm["155"],
+                closeIcon: true,
+                onContentReady: function () {
+                    disableBackDrop('bind');
+                },
+                backgroundDismiss: 'false',
+                escapeKey: 'buttonB',
+                content: "Do You Want to Append?<br> Yes will Append, No will clear the existing data and import again!",
+                buttons: {
+                    buttonA: {
+                        text: "Yes",
+                        btnClass: 'btn btn-primary',
+                        action: function () {
+                            ImportGridData();
+                            ConfirmDeleteCB.close();
+                        }
+                    },
+                    buttonB: {
+                        text: "No",
+                        btnClass: 'btn btn-bg-light btn-color-danger btn-active-light-danger',
+                        action: function () {
+                            IsgridummyRow = false;
+                            parent.$j("#chkallgridrow" + xlDcNo).prop("checked","checked");
+                            parent.clearDataGrid(xlDcNo,"excelimport");
+                            xlRowCount = 0;                          
+                            var myInterval = setInterval(()=>{
+                                if(callParentNew('isExcelImpDelWS')=='false')
+                                    {
+                                        clearInterval(myInterval);
+                                        ImportGridData();
+                                    }
+                            }, 2000);
+                            disableBackDrop('destroy');
+                        }
+                    }
+                },       
+            });
+        }
+        else
+            ImportGridData();
+    });
+})
+
+
+$j(document).ready(function () {
+    $('#excelfile').bind({
+        change: function (e){
+            var filename = $("#excelfile").val();
+            var fName = filename.toString().split("\\");
+            filename = fName[fName.length - 1]
+            $("#noFile").text(filename);
+            var file = e.target.files[0];
+            var files = e.target.files, f = files[0];
+            var FR = new FileReader();
+            FR.onload = function (e) {
+                var data = new Uint8Array(e.target.result);
+                var workbook = XLSX.read(data, { type: 'array',cellDates: true, dateNF: 'dd/mm/yyyy;@' });
+                var firstSheet = workbook.Sheets[workbook.SheetNames[0]];//
+                var result = XLSX.utils.sheet_to_json(firstSheet, { header: 1, raw: false });
+                // var result = XLSX.utils.sheet_to_json(firstSheet, { header: 1, blankrows: false });
+                if (result.length != 0)
+                    result = result.filter(row => row.some(cell => cell !== "" && cell !== null));
+                if (result.length == 0) {
+                    showAlertDialog("error", eval(callParent('lcm[509]')));
+                    return;
+                }
+                var dcNo = window.location.href.split('=')[1];
+                var gridFieldNames = callParentNew('GetGridFields(' + dcNo + ')', 'function');
+                var gridRowCount = callParentNew('GetDcRowCount(' + dcNo + ')', 'function');
+                var gridFieldAlongwithCap = [];
+                gridFieldNames.forEach(function (ele, ind) {
+                    let _fieldIndex = parent.FNames.indexOf(ele);
+                    let _fldCap = parent.FCaption[_fieldIndex];
+                    gridFieldAlongwithCap.push(_fldCap + '(' + ele + ')');
+                });
+                var check = gridFieldNames.some(r => result[0].includes(r));
+                var checkwithCap = gridFieldAlongwithCap.some(r => result[0].includes(r));
+                if (!check && !checkwithCap) {
+                    showAlertDialog("error", eval(callParent('lcm[510]')));
+                    return;
+                }
+                else {
+                    if (result[1].length == 0) {
+                        showAlertDialog("error", eval(callParent('lcm[511]')));
+                        return;
+                    }
+                    else {
+                        xlresult = result;
+                        xlGridfieldNames = gridFieldNames;
+                        xlRowCount = gridRowCount;
+                        xlDcNo = dcNo;
+                    }
+                }
+            };
+        
+            FR.readAsArrayBuffer(file);
+        }
+    })
+})

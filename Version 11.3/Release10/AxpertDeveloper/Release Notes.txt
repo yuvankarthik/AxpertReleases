@@ -1,0 +1,10 @@
+Release Notes:
+============
+	• Task ID-011195 -Zishta-Requirement - User Require Iview/listview Column Freeze option In Definition Level.
+		○ Note: Apart from run time freeze column option in iviews, introduced freeze column property at column level during definition which can be used by solution developers as per the business/solution requirement. 
+	• Task ID-011187 -Zishta- Requirement - In iView - user requires an option to Configure axrow option button position in iview
+		○ Note - has to be kept anywhere, in between columns also
+		○ Note: A hyperlink introduced at column level definition to defined Row Options in desired columns. Hyperlink will open the Row option definition form where the definition can be added as html which will be displayed as row option at run time. 
+	• Task ID-011247 -Zishta- A column level new property has been introduced for displaying the Negative values in desired financial formats(Ex.: Native value Suffice with Cr, Suffice with Db or In brackets). 
+	• Task ID-011273 -- MOE Select from API changed to take API URL from run schema instated of Structure XML. Existing structures needs to resaved to get API RUL from rum schema other wise API URL will take from structure XML only as per the existing functionality. 
+

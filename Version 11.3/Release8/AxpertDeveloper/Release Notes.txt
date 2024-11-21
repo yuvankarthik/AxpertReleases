@@ -1,0 +1,8 @@
+Release Notes:
+============
+	• Task ID-011107 -QA- Issue Description :Product Devsite issue : Under utility sql editor, when user run the query with params the define parameters window is showing blank.
+	• Task ID-011108 -QA- Product Devsite issue : When running a query with parameters in Tstruct, Iview, or Cards, the user receives the error message "dbExpress driver does not support the TDBXTypes.UNKNOWN data type. Vendor error message: ORA-01036: illegal variable name/number."
+	• Task ID-011121 -QA-Issue Description:DEVSite Iview -Hyperlink screen pop up After user enters the hyperlink name and try to add a row in Field Mapping, an error message is displayed "Row 1 is empty. Please enter data."
+	• Task ID-011132 -QA- Issue Description: User is able to Change Normalized field to De Normalized by modifying in Query even though transaction table having Normalized data.
+	• Task ID-011173 -QA- Description: Encountering I/O error 103/File being accessed by another process randomly while saving the structure.
+

@@ -1,0 +1,12 @@
+Release Notes:
+============
+	• Task ID-011513 -CMIS-Issue Description : After importing data into a form at runtime, when a user executes an SQL query with the respective table in the SQL editor on the DEV site, it throws an error message: "Uncaught SyntaxError: Unexpected token 'A', ... { "error": "An invalid ... is not valid JSON"".
+	• Task ID-011487 -PayAzzure- Description: When the user tries to access the Global Schema table in client schema Developer Site, it throws an error stating "relation 'Table name' does not exist."
+	• Task ID-011532 -QA- Requirement: Save as button should be hidden in online Tstruct and Iview definitions.
+		○ Note: Structures 'Save As' needs to be done through Axpert Exe and use the 'Go Online' tool to convert to online for un-avoided cases. 
+	• Task ID-011507 -QA- Issue Description: Runtime default buttons are visible when the user removes all default buttons from the toolbar on the Devsite.
+	• Task ID-011462  -QA-User is unable to save the Changes in Arrange Menu on First Attempt.Because of this user need to clicks on save button multiple times To save the menu changes
+	• Task ID-011463  -QA-In Arrange Menu-Unable to Modify the selected Icon in the same Window. 
+
+
+

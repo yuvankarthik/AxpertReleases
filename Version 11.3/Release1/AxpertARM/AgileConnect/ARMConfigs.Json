@@ -1,0 +1,25 @@
+{
+  "emailGateway": {
+    "hostName": " smtp.office365.com ",
+    "portNo": "587",
+    "userId": "user@gmail.com"
+  },
+  "SMSGateway": {
+    "userto": "",
+    "userfrom": "",
+    "message": "Hi wahtssup"
+  },
+  "WhatsappLogin": {
+    "Mobile": "7876787887",
+    "AuthCode": "788658"
+  },
+  "AdminInstance": {
+    "admin": "admin",
+    "Password": "agile",
+    "AdminEmailId": "admin@agile-labs.com"
+  },
+  "KeyData": {
+    "KeyInterval": 10,
+    "PrivateKey": "tOOMlj0w9uB7d5FE"
+  }
+}

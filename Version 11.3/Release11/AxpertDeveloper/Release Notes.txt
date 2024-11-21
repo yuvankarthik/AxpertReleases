@@ -1,0 +1,5 @@
+Release Notes:
+============
+
+	• Task ID-011280 -PayAzzure- Description -When User Open Employee Listing it is not Fetching records but in Pagination it is showing records Count
+

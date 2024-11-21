@@ -1,0 +1,69 @@
+Release Notes:
+============
+	• Task ID-011095 -Zishta- Issue Description: If a TStruct is opened in a popup using a hyperlink, it closes once we save a transaction. The popup window should remain available for another data unless it's intentionally closed by the user.
+	• Task ID-011073 -Zishta- Enabling the 'normalized field' option for a normal dropdown field (checking the 'normalized field' property [source key true]) didn't change the field's data type to numeric in the backend; it remained as character data type 
+	• Task ID-011023 -Zishta- After converting a form, every time a user saves it on the devsite, it appears in hidden mode in the Arrange Menu. To make it visible during runtime, the user has to manually unhide it in the Arrange Menu each time.
+	• Task ID-011072 -Zishta- DC tables are not recreated if the respective table is dropped from the backend to enable integrity constraints for normalized fields. i) DC Tables are not created when we drop the table from the backend and then call save structure. ii) Even after creating the table manually, if we add a field, then the field is not created in the backend.
+	• Task ID-010980 -ALLSec- Requirement: when a user attempts to modify an existing record in a form with enabled Cached Save, then the record should be saved directly to the database without being routed through the queue.
+	• Task ID-010978 -ALLSec- Requirement: Cached saving feature is not working when using a user-defined save button.It is directly Pushing to DB instead of Queue.
+	• Task ID-011002 - Allsec - If a user attempts to save a responsibility with an existing name, instead of displaying a duplicate entry validation message,it is showing as 'Responsibilities not saved, please try again later'.
+	• Task ID-010795 -BDF- Product Issue : In dropdown the Arrows keys are notworking while user search the value.
+	• Task ID-011075 -BDF- Issue Description : Upload file types developer option, user adding this developer option to have control on upload file types, but user getting issues in case of file extension is in upper case ( ex: Attachment1.PDF), expected with out case sensitive file extension can be smaller / upper  case.
+	• Task ID-011090 -BDF- Issue Description :When a user tries to attach a duplicate document from the second row to the first row, the screen keep's on loading
+	• Task ID-011076 -BDF- BDF Requirement : Work flow comments , option required to define default mandatory comments required or not.
+		○ Note: Below developer option introduced to make workflow comments nonmandatory/Mandatory
+			§ Developer option:
+				□ Property: Mandatory Workflow comments
+				□ property Code: Mandatory Workflow comments
+				□ Property Value: true/false
+				□ Form/Report: All Forms / Single Form
+				□ User Role: All / Single role
+	• Task ID-011085 -BDF- Issue Description : In Form Modification mode, opening another form as popup by click on button, after saving the entry in popup screen,  then popup will close and reload the entry in parent form instead it is opening as new entry.
+	• Task ID-011011 -BDF- Issue Description : Tstruct Hanging issue : Added buttons in a tstruct to open another tstruct  or iview (as popup), saving the entry in popup form and comes back to the parent form and click on any other buttons then form is hanging with loader symbol.
+	• Task ID-010913 -BDF- BDF Requirement : Upload file types - Regarding this developer option work only for Field Level Attachments, Same feature user need Header & Grid attachments also.
+		○ Note: Below developer option extended to Tstruct header attachments and Grid Attachments(ex.: dc2_image,dc3_image upload fields) same like AxpFile upload.
+			§ Developer Option:
+				□    Configuration: Upload file types
+				□    Key: Upload file types
+				□    Property Code: Upload file types
+				□    Value: true/false
+				□    Property info: Checklist with file extensions
+				□    Form/Report: All Forms/Single form
+				□    Description: Use this key to allow particular file extensions as per forms.
+	• Task ID-011001 - BDF - In iview, parameter caption is having special character like ( BDF #) then advance search window not working.
+	• Task ID-010947 -BDF- Issue Description : Grid Attachment to Db issue, While saving grid attachments we are getting the error like "ORA-01459: invalid length for variable character string."
+	• Task ID-010989 - BDF - Picklist and Dynamic filter params - Selecting the value from Advance search but it is not selecting/ populating in the parameter.
+	• Task ID-010933 - BDF - PickList with DynamicFilter - When dependent parameters are changed then it is loading (refreshing) and it should not happen when dynamicfilter is used. Dynamic Filter parameter should refresh or show list of values on demand.
+		○ Note: The picklist icon has been changed to differentiate it from the select with dynamic filter and picklist parameter types.
+	• Task ID-010884 - Pay Azzure - While exporting reports in Excel,1) Extra empty row is showing in between Report heading and Field values 2) 2 extra space is showing in before Report heading 3) Report headings should be in BOLD letter by default
+	• Task ID-010886 -Pay Azzure- Description : In Declare Investments and Calculate Tax - 'LoadFormAndData' is not loading the record during the formload event.
+	• Task ID-010885 - Pay Azzure - Data is not fetching properly When User Hide any dependency parameter.
+	• Task ID-010895 - Pay Azzure - Precondition: Enable Track Changes to one Tstruct. Description:UI of view history window is not proper at RUNTIME.
+	• Task ID-011000 -DOP- Enhancements in Loading a Form using form control script functions as mentioned below.
+		○ LoadForm(Transid,Params,DisplayMode,RefreshOnClose:String)
+			§ Note: The form will be opened in the new mode with passed parameters.
+		○ LoadFormAndData(Transid,Params,DisplayMode,RefreshOnClose:String)
+			§ Note:1. A form will be displayed along with data in edit mode. If data not found for provided params, error message will displayed.
+		○  If params contains normalized field, following farmat needs to be used to pass params.
+			§ Ex.: LoadFormAndData({trajr},{fldsn=:fldsn~fldsn_id=:fldsn_id},{p},{f}) Where fldsn is normalized field and fldsn_id should assigned source id of the selected value of the field 'fldsn', fldsn_id field can be savevalue false field.
+	• Task ID-010990 -DOP- Application throwing DB error when Save Normalized fields are used as parameter in 'LoadForm(Transid,Params,DisplayMode,RefreshOnClose:String)' the function.
+		○ Note: In this case params needs to be passed as follows.
+			§ Ex.: LoadForm({trajr},{fldsn=:fldsn~fldsn_id=:fldsn_id},{p},{f})Where fldsn is normalized field and fldsn_id should assigned source id of the selected value of the field 'fldsn', fldsn_id field can be savevalue false field.
+	• Task ID-010926 - TrustLine - In the list view, the attached files are appearing above the hyperlink, making it impossible to click on them.
+	• Task ID-010988 - TrustLine - After loading a record from the ListView, the user uploaded one more attachment and Saved, Observe that the Screen Keeps on Loading.
+	• Task ID-011024 - Bafco - Axpert Hybrid Flutter - In the leave application, the child Date fields are not filling based on parent date field.
+	• Task ID-011025 - Bafco - Axpert Hybrid Flutter - The Grid DC rows should display eight rows based on the select field, but only a few are listed in the leave application form.
+	• Task ID-011026 - Bafco - Axpert Hybrid Flutter - After adding rows in Grid DC the added row's elements are appearing blank.
+	• Task ID-011031 - Bafco - Axpert Hybrid Flutter - User unable to view the attached document getting this error message : "404 - File or directory not found."
+	• Task ID-011086 - Axpert Hybrid Flutter - In Axpert hybrid application the grid dc caption not showing properly. It is showing invalid dc name. but in web its showing properly.
+		○ Note: "Axpert Hybrid Flutter APK version 1.2.6 should be used."
+	• Task ID-011005 -Support- An issue encountered with the Export Sales Order screen. Despite values being successfully fetched from the backend, they are not displaying at runtime. Upon investigation, we have confirmed that the values are present in the trace file for the respective fields. For further details, please refer to the documents containing screenshot and trace file attached.
+		○ Note: As per the product logic, the fields with MOE is Calculate with SaveValue true property will refresh the expression during the LoadData. In this case values saved in DB can get changed during loaddata because of expression evaluation. To avoid default refresh of the value a global variable named as 'Axp_RefreshExpsOnLoad' can be introduced with value as 'false' in this case data saved in the DB will be loaded for the calculated field with expression. 
+	• Task ID-010992 -Support- An issue encountered with the SSO login functionality. While working on version 11.2.1 release 32, the SSO login has been working fine. However, in release 33, an issue is encountered with the SSO login due to a web configuration issue. Despite our efforts to rectify the issue by aligning configurations between release 32 and the latest web configuration file, and added the SSO login but, we've been unable to access beyond release 32.
+	• Task ID-011082 -QA- Issue Description: Display Total at RUNTIME-The total is not displaying for the Decimal and Numeric Fields that are out of the frame.
+	• Task ID-011032 -QA- Enhancement in tstruct grid functionality: A new property introduced for grid dc numeric fields named as 'DisplayTotal' as checkbox. By default, the value of the checkbox is false. Once this property value is true (i.e.: Checkbox is ticked), the total value will be displayed in grid footer during runtime. 
+	• Task ID-011033 -QA- Form Control function 'LoadPage' enhanced to load Custom Pages with below given format. Syntax: LoadPage(PageName,Params,DisplayMode,RefreshOnClose:String)
+		○  Ex.: LoadPage({HP1710828959069},{username=:username~company=:companyname},{d},{f})
+	• Task ID-011010 -QA- Issue Description: When loading the Application Properties Screen, the previously saved SMTP details are disappearing.
+	• Task ID-008000 - QA - Attached Files are overlapping with field data in ListView.
+

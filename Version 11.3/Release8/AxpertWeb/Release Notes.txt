@@ -1,0 +1,30 @@
+Release Notes:
+============
+	• Task ID-011176 -QA- Enhancement in Display Details/Purpose: Below mentioned changes are done for this enhancement in product level.
+		○ Display details/ Purpose text will be displayed in a bottom panel of the form on focus of the field which is defined for display details/purpose info. If both display details and purpose are defined in a particular field, only display details on will be shown in the bottom panel.
+		○ Display details/ Purpose will not applicable for Read only fields.
+		○  Display details/ Purpose icons withdrawn from the field caption.
+	• Task ID-011177 -Zishta- Enhancement in Grid display total functionality: If any of the numeric field defined for display total in the grid dc, display total panel(Footer) will be freezed by default.
+	• Task ID-011178 -Zishta- Form tab order is not working based field tab order.
+	• Task ID-011115 -Support- An issue encountered in web environment where we observed that the 'i' symbol has been appearing on multiple screens for various fields without any apparent cause. In Axpert desktop environment, we noticed that the 'i' symbol only appears in the detail box when a value is added. But in web environment, the 'i' symbol appears even when there are no values entered in the detail box. Also upon entering a value in the detail box, the symbol disappears. Please find the below word file with the screenshot attached for your reference.
+	• Task ID-011098 -Support- An issue encountered with the OE Delivery Schedule screen. There seems to be an--> absence of a fill grid when the select field has the auto-select option enabled within the grid. Also, upon attempting to save with multiple rows, it appears that the last row is not being considered, especially when there are more than one row present an error message stating "Scheduled Qty should Equal to order Qty" when multiple rows are entered, yet the transaction is successfully saved when a single row is entered. They have validation field in header based on the grid field. Please find the word file with screenshot and trace file attached for your reference.
+	• Task ID-011165 -Support- Issue: In the Axpert DRC Kotecha project, there's an issue with the pending deliveries iView report not refreshing after saving data from the invoice screen. Records only appear upon logging in again, particularly when accessing the iView separately rather than via the button. The newly created invoices are experiencing a similar delay in appearing in the pending deliveries list.
+	• Task ID-011128 -QA- Description : PEG - When User Make One record and Load that record from listview, Observe that when Header buttons are showing as Disabled but when user click on those buttons Functionality is working fine
+	• Task ID-010929 -QA- Issue Description: Precondition: Layout should be in Header-TabbedIssue1:Even after selecting the date, the calendar is not disappearing. It's only disappears after manually clicking on the calendar icon.Issue2: In Tabbed Non Grid DC,Eventhough the mandatory Date Field is filled out, On saving record it is throwing "Date Field cannot left empty"
+	• Task ID-011143 -QA- Product Issue : In Iview, the user closed the popups from both the child and the subchild popups, and when the user tries to click the clear button on the parent screen, the screen continues to load.
+	• Task ID-011159 -QA- Issue Description:Run time- Listview  When the user loads a record from the list view and clicks the 'New' button, a new transaction does not open.
+	• Task ID-011158 -QA- Issue Description : Product Issue : When the user loads the record from the report and clicks the Pagenavigation button, the button becomes disabled.
+	• Task ID-011162 -QA- Issue Description:The User Login Screen opens in New Mode when a user clicks the Previous or Next Transaction Button after loading records from User Logins.
+	• Task ID-011161 -QA- Issue Description: The User Role Screen opens in New Mode when a user clicks the Previous or Next Transaction Button after loading records from User Roles.
+	• Task ID-011156 -QA- Issue Description: Advance Settings in Iview Subtotal is not working as per expected
+	• Task ID-011179 -QA- When user load record from listview and Click on Design Mode, without making changes click on Run, Observe that Application is keep on loading.
+	• Task ID-011180 -QA- Load the record from Tstruct search, clear the cache, and switch on the trace file. When attempting to do a tstruct search, the user receives the error message "Duplicate_session" in runtime.
+	• Task ID-011142 -QA- Product Issue : 
+		○ Scenario 1
+			§ After clearing redis, the user enables Show log trace. When the user selects a value and searches for a record, the report should list instead of the search and clear options. 
+		○ Scenario 2
+			§ And after done above scenario the user click on clear button the screen is keep on loading.
+	• Task ID-011158 -QA- Issue Description : Product Issue : When the user loads the record from the report and clicks the Page navigation button, the button becomes disabled.
+	• Task ID-011162 -QA- Issue Description:The User Login Screen opens in New Mode when a user clicks the Previous or Next Transaction Button after loading records from User Logins.
+	• Task ID-011161 -QA- Issue Description: The User Role Screen opens in New Mode when a user clicks the Previous or Next Transaction Button after loading records from User Roles.
+

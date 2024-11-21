@@ -1,0 +1,5 @@
+Release Notes:
+============
+	• Task ID-010315-QA-Issue Description-When user scroll down after clicking the drop-down icon, there is a blank space visible between dropdown values and the refresh button.
+	• Task ID-008465-QA-Issue Description--When user clicks form properties,the form properties tab opening even after it is already opened.
+

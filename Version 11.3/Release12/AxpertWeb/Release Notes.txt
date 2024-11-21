@@ -1,0 +1,68 @@
+
+Release Notes:
+============
+	• Task ID-011412 -PayAzzure- Android Pay Azzure Issue : Under Options, the word button is not displaying in Employee Pay Info Listings.
+	• Task ID-011404 -PayAzzure- Android Pay Azzure Issue : In Iview, options buttons are not listing instead while clicking the option button the page is showing blank.
+	• Task ID-011447 -Pay Azzure- IOS and Android Flutter Issue: User unable to download the Excel Export data from Active list.
+	• Task ID-011411 -PayAzzure- Android Pay Azzure Issue : After click on print button the page is showing blank instead it should populate the print preview page.
+	• Task ID-011409 -PayAzzure- Android Pay Azzure Issue : After click on html button the page is showing blank instead it should download the HTML file.
+		○ Note: Only PDF,Excel and Word export options are available in iview for Mobile login
+	• Task ID-011478 -PayAzzure- Requirement: User wants to increase the width in the "Responsibility Name" field in Responsibility
+	• Task ID-011509 -PayAzzure- We want to make global tables accessible in all database calls within both the app schema and the def schema. Currently, we are unable to access global tables from dropdown sql and it is throwing an error "invalid tables".
+	• Task ID-011345 -Pay Azzure- Description - When a user creates a field name starting with 'dc1, dc2, ...' (ex - dc1am)and uses the same field in the AxHideControls() script, it hiding the entire DC.
+	• Task ID-011432 -AxpertFlutter - IOS Flutter Issue: In Iview/Listview under options except (print & copy) all the buttons are not working.
+	• Task ID-011453 -Axpert Mobile- Issue Description: Axpert Hybrid issue: When the user loads a record from the listview after adding the time field to the tstruct, the future field values are  not appears. 
+	• Task ID-011514 -BDF- Issue Description : Fill filed not working when we select the value of "select field" from Advance search. 
+		○ Scenario-1 : Select field in DC1 and Fill fields dc2 ( Non grid ) but values are not filling user select the value from advance search. Form name : Fill fld Issue from Dc1 to Dc2 
+		○ Scenario-2 : In Grid DC , Fill fields are not working when user select the value from the Advance search- Form Name : Regular issue 
+	• Task ID-011515 -BDF- BDF New Requirement - Currently the header attachment stores in database with multiple blob, need provision to store it in a single blob
+	• Task ID-011529 -BDF- Issue Description : BDF ISSUE - In advance search, after filtering the records using search text box, if user click on any record other than first record, then the corresponding record is not getting selected, instead it is selecting the some other record, and if user click on the last record in the list, it will not select. (BDF #: T11-000458).
+	• Task ID-011520 -CMIS- Issue Description: When a user loads a record using a hyperlink in Iview, the screen keeps loading at runtime
+		○ Note- Click on update hyperlink of Action ID ACT000002 
+	• Task ID-011270 -CMIS- Issue Description: At runtime, When a user selects multiple values at same time through keyboard action in the checklist field the selected count does not appears, but selected count appears after click on the checklist field  
+	• Task ID-011426 -CMIS- Issue Description: When a user enters data with a newline character in Large Text Field 1, the data is not copied to Large Text Field 2 On the field exit event.
+	• Task ID-011450 -Zishta- Issue Description: GenMap is not working when transactions are posted via SQLPOST to the genmap source
+	• Task ID-011451 -Zishta- Issue Description: "Freeze till this column?" is not working in iview at runtime once user changes the param value
+	• Task ID-011452 -Zishta- Issue Description: "Negative numbers represented as" is not working with in the Pivot Column
+	• Task ID-011362 -Support- Issue: while uploading the excel file in Grid DC that has a total amount (calculation field) column that is not calculating automatically after importing the excel file. The field is not getting calculated even after clicking on the same field.
+	• Task ID-011379 -Support- Issue: The issue is that expression using getmax() is not refreshing on screen properly as on when the grid values are added.Rather it works after deleting the last blank row. Whereas getmin() is working fine.  The same is working on desktop, but on the web, the max field is not calculating. We also advise changing the remarks DC to a visible DC, but it is still not calculating
+	• Task ID-011380 -Support- Issue: There are 2 multi select params in an iview, where one is dependant on another. In the given scenario, Company parameter is multi selected first and then when we look for account name multiselect, it is not working. 
+		○ Note: If the Multiselect parameter is used as query parameter in another parameters SQL, then this SQL should have 'IN' Clouse with ':' multiselect parameter name. 
+	• Task ID-011477 -Support- Issue: In the dashboard Trying to open the same cards for the second time causes it to become unresponsive.
+	• Task ID-011472 -Support- Issue: In the grid view popup the fields are not enough to display the entered details clearly, details showing vertically. Issue in mobile view.
+	• Task ID-011494 -Support-Experiencing an issue in the Axpert application where duplicating more than one tab simultaneously is not possible. A solution is needed to release this control and allow for multiple tab duplication. Please find the attached screenshot for your reference.
+	• Task ID-011489 -QA- Issue Description :load the data from the list view regardless of the if condition, and the user navigates to the valid records using the Previous and Next buttons. The Previous, Next Transaction and submit buttons are not hidden at RUNTIME.
+	• Task ID-011488 -QA-Issue Description:Issue1: 'Submit button' is not hidden on field enter, on field exit and on click Form controls at RUNTIME.Issue2: 'Submit button' is not disabled on field enter, on field exit and on click Form controls at RUNTIME
+	• Task ID-011501 -QA- Issue Description : Project name appears in the Word document at runtime when the user enables the "Hide project name" checkbox from the properties in the iView on the DEVsite.
+	• Task ID-011527 -QA- Issue Description: Axpert Hybrid issue: User unable to upload a file in the Non-Grid Attachment field (AxpFile_Upload).
+	• Task ID-011535 -QA- Issue Description: A file is uploaded to the server path once it is uploaded by the user in Grid DC having FillGrid(AxpFile_). The uploaded file is not visible in Webinterface
+	• Task ID-011534 -QA- Issue Description: 'File server path is empty/invalid' error is thrown when a user uploads a file (Axpfile_) in Grid DC with FillGrid that has a hidden filepath field.
+		○ NOTE: Even if Filepath is a hidden field, without FillGrid. The files can be uploaded by the user.
+	• Task ID-011521 -QA- APILogging (New feature to ALL REST APIs + ExecuteAPI calls)
+		○ Note : Provided DB Scripts needs to be applied along with enhancement.
+	• Task ID-011522 -QA- ExecuteScripts: New API introduced in ASBScriptREST
+	• Task ID-011524 -QA- Setting the response content type of ALL REST APIs to application/json
+	• Task ID-011525 -QA- Fix for the Jaipur project PEG-related issue
+	• Task ID-011491 -QA- Issue Description: Report Heading 2, Report Heading 3 values are not appears in word document, after downloading it from utility/list at runtime.
+	• Task ID-011510 -QA- Rules are not saving properly from config studio as rule engine transid is changed. 
+	• Task ID-011467 -QA- ARMExportExcel: Enabled global schema(Postgres) connectivity for excel export in RestDLL and added globalvars & uservars for parameters 
+	• Task ID-011468 -QA- Enhancement in AxpFile upload: Uploaded files (through AxpFile upload functionality) in one form(Source form) can be bring to an another form(target form) through dependency.
+		○ Note:
+			§ Source and target form's upload path(AxpFielPath) should be same.
+			§ If the uploaded files changed (added/deleted), corresponding source form AxpFile upload field values needs to be updated though proper structure definition ( ex.: GenMap,SQlPOST, ect..).
+			§ If file upload(AxpFile) field is 'readonly' then the files can not be added/deleted. Only view option is available in this case.
+	• Task ID-011400 -QA- Issue Description: Rules functionality not working as per the expectation 
+		○ Note- This issue is happening only in oracle schemas
+	• Task ID-011391 -QA- Issue Description: At runtime, On data load from the list view the next, previous, and Discard buttons are not hidden
+	• Task ID-011385-QA-Issue Description-If user selects Single/Double/Triple DC Layout in Formdesign, In RUNTIME the UI is not proper for Checklist and Multiselect Fields.
+	• Task ID-011383-QA-Issue Description-In runtime, the calendar and clocks are appearing outside the frame when the user clicks on calendar and clock icons, specifically when the Form Alignment is set to 'Right' in Tstruct Design on the Dev site.
+	• Task ID-011455-QA-Issue Description-Android Flutter Issue: When the user opens a popup window through add master data, the default button alignment does not appear properly.
+	• Task ID-011427-QA-Issue Description-Android Flutter Issue: When the user swipe's the screen left to right the all fields are swipping and appearing blank space.
+	• Task ID-011471 -QA-Issue Description: If the user ID has an associated email, then once the user navigates to the Forgot Password screen, the email should automatically appear based on the username
+		○ NOTE: The user email is visible until clicks on the email field
+	• Task ID-011470 -TrustLine- Issue Description: LoggedIn URL: https://qa.agilecloud.biz/Axpert11. 3alpha/aspx/signin.aspx?axpost113
+    Once user navigates to Forgot Password Page and click on "Go back to Login" Button, it is navigating to
+    https://qa.agilecloud.biz/Axpert11.3alpha/aspx/signin.aspx? instead of https://qa.agilecloud.biz/Axpert11.3alpha/aspx/signin.aspx?axpost113
+	• Task ID-011481 -TrustLine- Issue Description : Android Mobile view Issue: Is firs time, when user try to save the incorrect password the page is scrolling up automatically.  
+    Note : The issue is happening only in mobile view (chrome)
+	• Task ID-011541 -Support(qbridge)- Issue: While uploading the Excel file in Grid  and total qty  the footer tab that is not calculating automatically. after applying the latest hotfix issue got raised.

@@ -1,0 +1,24 @@
+Release Notes:
+============
+	• Task ID-010965 -PayAzzure(Mobile)- Android Pay Azzure Issue : Tstruct / Iview / Cards - Backbutton functionality is notworking
+	• Task ID-011576 -PayAzzure- Global tables accessible in all database calls within both the app schema and def schema. Currently, we are unable to access global tables from multi select fields and it is throwing an error "relation table_name does not exist".
+	• Task ID-011595-BDF- The user requires the developer option - "Enforced Strong Password Policy" for isfirstime Reset password functionality.
+	• Task ID-011585 -CIMS- The ScriptREST API is returning an empty file as base64-encoded data in the API response for scripts containing PrintForm/PreviewForm. However, these scripts work correctly when executed from the web application interface.
+	• Task ID-011580 -CMIS- When a user selects a record that contains the '&' symbol from the Iview parameter and downloads the Word document using the option button, the downloaded Word file does not include the selected records. 
+	• Task ID-011578 -CMIS- Issue Description: When a user creates a report using the HTML function and tries to download it as a Word document using the option buttons, they notice that the 'IC' field in the downloaded Word file contains HTML tags."
+	• Task ID-011504 -CMIS- Issue Description: Runtime-Iview Word option The hidden column appears in the Word Document even though the user hides the column using the axHiddenColumn parameter in the iview at runtime.
+	• Task ID-011546 -IMMS- Enhancements for form notifications in Genmap, file attachments, and HTML email bodies.
+	• Task ID-011547 -IMMS- The Jaipur team has requested an enhancement for PEG Recall to allow recalling a task before it is acted upon by the next-level user.
+	• Task ID-011518  -AxpertDRC- The "Save and Email" button in Axpert 11.3 Web is not functioning correctly. When attempting to send attachments via email using the `i__*.*` syntax in the attachment section, the following error message appears: "Error while sending mail: Access violation at address 0000000000000000." This functionality works correctly in the Axpert desktop version but fails in the web version. 
+	• Task ID-011584 -Nuwab- When saving any form from Developer Studio, the AXToolbar table is not updated at runtime for that particular form. This issue occurs because a reserved keyword, "key," is being used as a column name in the AXToolbar table. 
+	• Task ID-011552 -Support(trustline)- Issue:  When we enable the ListView in the developer mode, unable to save the screen, and the 'Structure Saved' message does not appear. However, if we disable the ListView, we are able to save the structures. This issue occurs for the Trustline customer and can be reproduced in our instance as well.Please find the details below.
+	• Task ID-011558 -Support(Dilmha)- Issue: Clone option is not working in the web, after loading the transaction then clicked the clone it showing "clone not completed due to Access violation at address 0000003526366 in module ASBScript.dll" Read of address 0000000010" 
+	• Task ID-011559 -Support(Dilmha)-Issue: When enabling the ListView option, the structure is not saving properly.  As you discussed with the Dilmah team, this issue has been assigned to you.
+	• Task ID-011499 -Support(Dilmha)- Issue Description:  Copytrans() script is not working and throwing access violation issue. When connected with customer to verify, I had observed the same script working for another tstruct but throwing accessviolation in this tstruct. 
+	• Task ID-011591 -QA- Issue Description: Global Schema Table is not working in Multiselect field
+	• Task ID-011538 -QA(Kauvery)- Issue Description: When a date field(Grid/Non Grid) is calculated using AddToDate() at RUNTIME, the calculated date is not highlighted in the date picker for the first time.
+		○ NOTE: It is highlighted when you click on the date picker for a second time 
+	• Task ID-011570 -QA- Issue Description: Once a record is loaded from the ListView, clicking 'Clear Cache and Reload' loads the form in new mode instead of reloading the existing record
+	• Task ID-011599 -QA- Execution trace enabling through Switch button(Same like Show Logs) introduced in right side options menu for build access users, which can be used to analyze client side issues. 
+	• Task ID-011600 -QA-When developer option for enforced strong password policy is set to true, there is error while changing password with defined format.
+

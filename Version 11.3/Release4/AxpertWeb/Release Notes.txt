@@ -1,0 +1,24 @@
+Release Notes:
+============
+	• Task ID-010898 -ALLSec-Description - Unable to remove the image(Image field) of a submitted record in a Tstruct using Remove Avatar Button.
+	• Task ID-010897 - Allsec - Description - Global Import, Mandatory fields indication is not Showing in Downloaded Excel/CSV templates
+	• Task ID-010899 - Allsec - The Offer Letter is not downloading as expected in PDF format.
+	• Task ID-010921 - Allsec - In QR code, ARM Key value is displayed instead of ARM URL.
+	• Task ID-010889 -Pay Azzure- Description - When a user saves an existing record, previously encrypted data showing in view history.
+	• Task ID-010904 -Pay Azzure- Precondition - Create one simple text Field and Enable 'Is Data Encryption Required?', Pattern as - 'Is numeric'
+	• Task ID-010922 - Pay Azzure - There's an error when scripts are executed in tstructs with webservice timeout option enabled.
+	• Task ID-010885 - Pay Azzure - In YTD Report, Data is not fetching properly When User Hide any dependency parameter
+	• Task ID-010903 -BDF- Issue Description : Fill Grid Issue, Fill grid defined with "Append rows to grid" as add rows , if Data has & symbol then fill grid data not populating properly.
+	• Task ID-009629 -Support- Issue: Cancel Remarks textbox is not showing while cancelling the transaction
+	• Task ID-010900 -Support- Field Value  takes the exponential instead of decimal values. so it's throwing an error . "7E-5.00000" is not a valid floating point value.
+	• Task ID-010700 -Support- Workflow History showing Wrong Approved time 
+	• Task ID-010925 -Support-Dashboard cards are not loading if image cards are there.
+	• Task ID-010916 -Support- MD-Map: Specifically, when numeric data is posted, it appears in another screen without any decimal points. 
+	• Task ID-010909 -QA- Axpert Connection Name of run schema
+		○ Note: Axpert Connection name published in global variable named as 'axp_connectionname'
+	• Task ID-010880 -QA- Issue: Form notifications were not triggering when the "Email required" option was disabled. 
+	• Task ID-010881 -QA- Issue: The Axpert language upload XL file was not releasing the converted CSV file until the session ended.
+	• Task ID-010883 -QA- Description:Issue1-Rule- In form controls Disable command is not working for PDF and New buttons.Issue2-Rule- In form controls Hide command is not working for PDF and New buttons.
+	• Task ID-010910- QA -Allow Data update through primary key has been shifted to first panel in global import from 3rd panel
+	• Task ID-008179 - QA - When a user clicks on the clock icon in the time field in grid dc, the time is not visible.
+

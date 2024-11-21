@@ -1,0 +1,42 @@
+	• Task ID-009249 -Support- New Feature Request Fillgrid Pop up Screen - Column Width Adjustment
+
+	• Task ID-010662 -Support- Issue: Amount in words not working in web expect INR. The currency they are using is Sri Lankan, and the format is incorrect—rather than showing in lakhs, it should show in hundred thousand—and it functions properly on desktop but not on the web.
+
+	• Task ID-010734 -Support- Issue : Encountering an issue with the clone option: when utilizing the clone option, it results in the appearance of duplicate columns as shown in the "after clone" image. 
+
+	• Task ID-010690 -Support- Issue: Duplicate detail (Grid DC) records are created when they use the save action. But the data in every entry is the same except detailed. 
+
+	• Task ID-010726 -Support- Issue: The FillGrid Alignment is currently misaligned. While users can make changes to form design options in the web version, the same flexibility is not available for FillGrid columns. We are unable to properly align the columns within the FillGrid and within the Sales Order Local Screen, in the Grid DC when the second row is not being added, and attempting to use the add icon ( + ) results in prolonged loading times beyond acceptable limits.
+
+	• Task ID-010715 -Support- Issue: The Getsourceimage function not working in web. Syntax : getsourceimage(stransid,{recyclelogo},companyid) 
+
+	• Task ID-009972 -Anukampa- Test Case Description- If user are searching the specified values with % for multiple combination in drop-down search it is not working.
+
+	• Task ID-010696 -BDF- Roundoff issue in gen map target transaction, ex: amount * (1-2) ,decimal value having issue.
+
+	• Task ID-010685 -BDF- Requesting Hook for ShowingDC() function for the purpose of BDF customizations.   
+		○ Note: AxBeforeShowingDC(),AxAfterShowingDC() hooks enabled for ShowingDC functionality.
+
+	· Task ID-010707 -payazzure- Expand /Collapse Option in Boolean DC/non Boolean dc's.
+		○ Note: 1. New button introduced to Expand / Collapse any dc's except primary dc. 
+		○           2. Boolean DC button moved to the left side of the dc caption.
+
+	· Task ID-010719 -QA- Description - If User create both Home Configuration Cards and Regular Cards in Homepage then Home Page Cards are Showing as Compressed and UI is not Proper
+
+	· Task ID-010720 -QA- Description - Created Home Configuration Cards are not Showing on Home Page in Oracle Schema.
+
+	· Task ID-010721 -QA- Description - If user Expand Notifications and Scroll, the background screen is scrolling instead of Notifications Screen
+
+	· Task ID-010742 -QA- Task Description: In Grid Freeze Option, Instead of Field names in Dropdown, Can we show Field Captions for more user-friendly
+
+	· Task ID-010751 -QA- Calculate field with expression should not evaluate expression during loaddata.
+
+	· Task ID-010739 -QA- Issue Description: On Saving the Home configuration Card with Group folder having more than 10 characters, showing error as"Group folder : value exceeds defined width"
+
+	· Task ID-010741 -QA- On saving user roles, showing error as "column "selfregistration" does not exist"
+
+	· Task ID-010736 -QA- Rules-On click of Rules, showing ORA-00942: table or view does not exist error
+
+	· Task ID-010740 -QA- Except Components fields, special and basic field ui is changed in DEV site
+
+	· Task ID-010752 -QA- Loaddata getting hanged if the Tstruct header attachment is enabled and its fileserver path is not exist.

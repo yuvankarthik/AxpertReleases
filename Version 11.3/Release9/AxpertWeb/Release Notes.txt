@@ -1,0 +1,19 @@
+Release Notes:
+============
+	• Task ID-011120 -- Enhancement: Tstruct loading performance improvement changes.Below mentioned changes are done for the Tstruct/Form load on behalf of performance improvement.  
+		○ Once the tstruct/form loaded first time, the tstruct html will be cached in browser localstorage as well as in Redis.
+		○ For the same session, already loaded forms will be loaded from the html which is cached in the browser localstorage.
+		○ The HTML stored in localstorage will be used during transaction data load as well.
+		○ Tsteruct HTML stored in Redis will be loaded and stored in localstorage for the new sessions, As the html stored in localstorage will be cleared during application sign-out.
+		○ A new 'Refresh' button has been introduced in tstruct during run time for Build users. This button can used to refresh the tstruct if loaded tstruct definition changed in developer site. Means, this button can be used clear the cache and reload the tstruct from DB without logout and login during solution development.   
+	• Task ID-011099 -BDF- Issue Description : When the user tries to upload a duplicated file from previous transaction,the error message "File already exists, please rename and upload again!" appears in the header attachment.
+	• Task ID-011122 -BDF-  Issue Description : Delete Control is defined for a tstruct,  but Cancel/ Delete not working as expected
+	• Task ID-011116 -- Tstruct popup should need to handled based on developer option to close and refresh.
+		○ Note: Below developer option introduced to close tstruct popup on submit or stay on it
+			§   Developer option:
+			§   Property: Tstructs popup close on submit
+			§   property Code: Tstructs popup close on submit
+			§   Property Value: true/false
+			§   Form/Report: All Forms / Single Form
+			§   User Role: All / Single role
+

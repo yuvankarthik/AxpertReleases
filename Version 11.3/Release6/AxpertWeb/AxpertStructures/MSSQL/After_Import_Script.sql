@@ -1,0 +1,1 @@
+alter table axpflds add displaytotal varchar(1);

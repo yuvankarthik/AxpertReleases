@@ -1,0 +1,76 @@
+Release Notes:
+============
+	• Task ID-011680 -- The below UI changes has been applied at product level.
+		○ New landing page has been introduced including banner. This banner title and description can be set as a JSON file named as 'mainpagebanner.json' and should be keep it in project_name folder under webcode folder, and banner images also can keep in the same folder.
+			§ Note: 
+				□ KPI dashboard cards can be set in landing page by using the checkbox 'Is required in homepage?' in the cards definition page
+				□ Users can set old landing page as default landing page by using home page setting in User level or Roles level.
+		○ New Listing page introduced instead of listview   
+			§ Note: Smart navigation is now part of Axpert. Smart navigation is achieved by a modern listing page and read only form page. The listing page lists form data as a card or a table. It has advanced features for filtering. It also provides configurable charts and summary. The read only form page presents the tstruct /form data in a standard and intuitive format with options to see all connected and similar data in a single page. By default when a tstruct is created (if no data available), user will be redirected to the new listing page and not to the form page.This functionality can be overridden using the below developer option.
+				□  Developer option(from menu) :
+					® Property: Listview as Default
+					® property Code: Listview as Default
+					® Property Value: true/false (default value is true. To open tstruct directly, value should be 'false')
+					® Form/Report: ALL Forms / Single Form
+					® User Role: All / Single role
+				□ Developer option(from global search) :
+					® Property: Listview as default from search
+					® property Code: Listview as default from search
+					® Property Value: true/false (default value is true. To open tstruct directly, value should be 'false'
+					® Form/Report: ALL Forms / Single Form
+					® User Role: All / Single role
+		○ New Analytics page has been introduced as an option along with Home, active list, dashboard and calendar.
+			§ Note: Analytics page, lets users analyze form data. This presents the users with aggregate fields on x-axis and the group fields in the y-axis. The user will be able to see charts for any pair of aggregate-group field pair. The drill down from here will take the user to the listing page. The next versions will have options to combine multiple more than one group and aggregate fields and create custom views.
+		○ Global parameter UI has been changed to Name-value pair and this can be open from the Title Bar 
+			§ Note: Above UI change will be the default product UI. If the old UI is required for any specific project, below web.config key needs to be introduced with value as 'true'
+				□ Web.config key:  <add key="AxOldModel" value="true"/>
+	• Task ID-011681 -- Config page changes:  a. Enhanced Config page UI changes. And config page title is changed to 'Instance Console' b. Project logo Setting moved to Settings page in Configuration studio. c. Web & Mobile background images setting withdrawn, if separate images required it needs to handled in signin page templates. 
+	• Task ID-011682 -- Setting page optimization in Configuration studio
+	• Task ID-011683 -- AxpFile Upload UI enchantment in tstruct.
+		○  Note: If field level or application variable level file upload path is not set, then 'File Upload Virtual Path' path will be used for AxpFile upload if this path is set in Instance console page. 
+	• Task ID-011684 -- Global Import UI enchantment in global import data page
+	• Task ID-011685 -- Publish listing has been introduce in configuration studio. This page can be used to publish the selected/all 'Form Notifications,Periodic Notification, PEG, Publish API and Rule'
+	• Task ID-011661 -PayAzzure- Oracle DB - Description - When a user enables cached save for a tstruct and saves a record with an exception in that tstruct, when it is loaded from the active list, it is loading empty form and tstrcut is in Disable mode.
+	• Task ID-011605 -PayAzzure- In Iview we are getting below mentioned error message after adding paycycle as parameter.
+	• Task ID-011633 -PayAzzure- Description : In Oracle Schema - Login with Check level user, navigate to the 'Active List,' and click on the 'View Form' button in the PEG task. Observe that it is displaying 'Approve' and 'Reject' buttons instead of 'Check' button
+	• Task ID-011544 -PayAzzure(Mobile)- Android Flutter Issue: After downloading the (PDF & WORD) file, the file format is showing as ".aspx".
+	• Task ID-010965 -PayAzzure(Mobile)- Android Pay Azzure Issue : Tstruct / Iview / Cards - Backbutton functionality is notworking
+	• Task ID-011444 -PayAzzure(Mobile)- IOS and Android Pay Azzure Issue: Grid fields are getting out of frame and the except grid fields the screen is swiping left to right in Flexi Planner screen.
+	• Task ID-011630 -BDF- BDF Requirement - In Tstruct,The user requires an option to navigate HTML page with Display Details. 
+		○ Note : 
+			§ User Need a option to open as popup, this will help to use this feature effectively.
+			§ After closing the popup, the entered field values should be displayed.
+				□ Ex.: Hyperlink definition needs to be defined as follows in display details, where 'displaymode' is newly introduced with value 'p' for popup.
+					® <h>type=t,name=tapfu,displaymode=p</h>
+	• Task ID-011629 -BDF- BDF Requirement - Display details : In BDF, purpose column was used to keep old query, modification details, old expressions, basically for developer's notes.Display details only user using for hint.
+		○ Note:
+			§ Below developer option introduced to Avoid purpose field from display details.
+			§ To avoid purpose field from display details, 'Avoid purpose field from display details' key needs to added with value 'true'
+				□ Developer option:
+					® Property: Avoid purpose field from display details
+					® property Code: Avoid purpose field from display details
+					® Property Value: true/false
+					® Form/Report: ALL Forms / Single Form
+					® User Role: All / Single role
+	• Task ID-011665 -BDF- BDF Issue - Iview refresh issue, Iview name and param details are getting hide while refreshing the Iview.
+	• Task ID-011632 -BDF- Issue Description : Round off issue, while entering the value is not rounding as expected and same issue while saving also.
+		○ Note: The round off value should be ("38.709"),("48.709")
+	• Task ID-011614 -BDF- BDF Issue - Password should be changed to every 60 days, and the user should get password change alert before a week or 10 days. These Options are not working as expected.
+		○ Note:
+			§ Password policies not applicable for the user 'Admin'
+			§ Notification though SignalR is introduced for password expiry notification.
+	• Task ID-011613 -BDF- BDF Requirement - Required Hint option for Password field as per the enforced password policy and length setup. 
+	• Task ID-009699 -ALLSec- Description : In Active List  - When the user returns a transaction with a 'Previous level or initiator' task is  going to Initiator
+	• Task ID-011324 -Support(Dilmah)-Issue:  For non-approvers, it is possible to save and make changes on the screen. However, approvers are unable to save and make changes on the screen; it is throwing an error.
+	• Task ID-011625 -Support(Dilmah)-Issue:  FireSQL is used and should be triggered after the 'After Cancel Transaction' event to update records in the specified table. However, the script isn't working as expected, and the same issue occurs with the, 'Before Cancel Transaction', 'After Save Transaction', the 'Before Save Transaction', event.
+	• Task ID-011563 -Support(Dilmah)- Issue: A recurring issue with the grid functionality needs attention. The error message, "Itemcode Row3 can't be left empty," appears on the line immediately following the last row in the grid. For example, if one row is present, the error displays on the second line; with two rows, it appears on the third line, and so on.
+	• Task ID-011442 -Support(Dilmah)- Issue: Reaching out regarding an issue encountered with our reports and screens. Initially, generating any pending report on the screen works correctly. However, after changing the application parameter selection, the report no longer functions as expected.
+	• Task ID-011618 -QA(ub)- Issue Description: Unable to create a new user,new role and new responsibility under User Management
+	• Task ID-011617 -QA(ub)- Issue Description: Unable to load the iviews in mssql schema. Unable to see the Userlogins,Roles and responsibility Iview.
+	• Task ID-011669 -QA- Form Notifications: ORA-01461 Error.Issue: Error occurred while processing form notifications due to the AxActiveMessages table not being updated. The error encountered was: ORA-01461: can bind a LONG value only for insert into a LONG column.
+	• Task ID-011670 -QA- Autogen Field Data Not Being Pushed to Database.Issue: In the QA environment, when saving a form with an autogen field, the data is not being pushed to the database through the SubmitData API.
+	• Task ID-009890-QA-Test Case Description--In grid dc ,the eye icon for a password field is not visible
+	• Task ID-011017-QA-Issue Description--Add View in Iview- Columns, Even though the user selects all the columns in Column View, the "Show all" checkbox still displays as "Unselect"
+	• Task ID-011016-QA-Issue Description--Add View in Iview- Row Grouping-The user is unable to remove the count selection from the function dropdown once it's been chosen. When attempting to select a different value, the system is adding another count selection in the function dropdown instead of replacing the existing one
+	• Task ID-011668 -QA- Product : When the user opens the form, the select field and calendar fields lov window will populate after clicking out of the field, it does not close and same after loading the data from listview.
+

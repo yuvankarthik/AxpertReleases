@@ -1,0 +1,72 @@
+Release Notes:
+============
+	• Task ID-011272 -- Iview Export enhancements: Iview export to Excel has been moved to backend process through ARM if the iview displayed records more than page size. In this case a message 'Your request to export data is submitted successfully. You will be notified once the file is ready.' will be displayed to the user.
+			§ Note: ARM setup is mandatory to export iview data to Excel for the high-volume reports. Please follow ARMExportService doc provided along with ARMExportServer API.
+		○ Iview export to Word has been introduced
+			§ Note: DOP project requirement
+	• Task ID-011273 -- MOE Select from API changed to take API URL from run schema instated of Structure XML. Existing structures needs to resaved to get API RUL from rum schema other wise API URL will take from structure XML only as per the existing functionality. 
+	• Task ID-011261 -Payazzure- Description - In Grid Multiselect Advance Search is listing nongrid Dropdown field values.
+	• Task ID-011265 -Payazzure- Description - Processid is not Refreshing When user Open Form from Menu or Global Search 
+		○ Note - When User Click on NEW/Reload Button then Processid is updating 
+	• Task ID-011241 -Payazzure- AxHideControl is not working in tabbed dc. For ex: Hide/Unhide of fields are not happened in tabbed dc.
+	• Task ID-011258 -CMIS- Issue Description: Security Audit for CMIS application Rajasthan Govt. Project. Please find the attached issues document
+		○ Point #1: Http-Secure Flag Not Set: When a cookie is set with the HttpSecure flag, it instructs the browser that the cookie can only be accessed by the server and not by client-side scripts. This is an important security protection for session cookies
+			§ Note: This httpCookies "<httpCookies httpOnlyCookies="true" />" by default enabled in product web.config file. If "Http-Secure Flag Not Set" flag is not set, the key "<httpCookies httpOnlyCookies="true" /> in web.config needs to be commented out and the key "<httpCookies httpOnlyCookies="true" requireSSL="true" />" needs to be uncommented.
+		○  Point #2: OPTIONS Method Enable: Disable unnecessary allowed (TRACE, OPTIONS, DELETE, PUT, PATCH, HEAD) methods in the application.
+			§   Note: Below security code needs to be add under security tab in web.config file.
+			§  <verbs allowUnlisted="true">
+			§ <add verb="OPTIONS" allowed="false" />
+			§ <add verb="TRACE" allowed="false" />
+			§ <add verb="HEAD" allowed="false" />
+			§ <add verb="DELETE" allowed="false" />
+			§ <add verb="PUT" allowed="false" />
+			§ <add verb="PATCH" allowed="false" />
+			§ </verbs>
+			
+			§ Ex.: <security>
+			§ <requestFiltering>
+			§ <requestLimits maxAllowedContentLength="536870912"/>
+			§ <verbs allowUnlisted="true">
+			§ <add verb="OPTIONS" allowed="false" />
+			§ <add verb="TRACE" allowed="false" />
+			§ <add verb="HEAD" allowed="false" />
+			§ <add verb="DELETE" allowed="false" />
+			§ <add verb="PUT" allowed="false" />
+			§ <add verb="PATCH" allowed="false" />
+			§ </verbs>
+			§ <hiddenSegments>
+			§ <add segment="node"/>
+			§ <add segment="node*js"/> 
+			§ </hiddenSegments>
+			§ </requestFiltering>
+			§ </security>
+		○ Point #3: Using Known Vulnerable Component: All jQuery file versions removed. 
+		○  Point #4: Reflected Cross Site Scripting: handled in signin and main pages.
+	• Task ID-011230 -Axpert DRC- The customer currently experiencing an issue with the iView interface, where the available bond value (field name: "avlbond") is not updating as expected after new entries are made. We have written available bond query inside parameter. Whenever a new entry is made it should change the available bond value. In the desktop and older web version is working correctly. Even after logging out and logging in again it is not refreshing.
+	• Task ID-011219 -Axpert DRC- Issue: Although the subtotal display on the web appears in black and bold, customers have expressed a desire for it to be shown in a different color for an enhanced user experience, especially when compared to the display on Axpert desktop.
+		○ Note:1. Below developer option introduced to apply default axpert desktop subtotal color in web.
+			§             Developer option:
+			§             Property: Set iview subtotal default color as Axpert desktop
+			§             property Code: Set iview subtotal default color as Axpert desktop
+			§             Property Value: true/false
+			§             Form/Report: ALL Reports / Single Reports
+			§             User Role: All / Single role
+		○ Below developer option introduced to apply default axpert desktop grand total color in web.
+			§             Developer option:
+			§             Property: Set iview grand total default color as Axpert desktop
+			§             property Code: Set iview grand total default color as Axpert desktop
+			§             Property Value: true/false
+			§             Form/Report: ALL Reports / Single Reports
+			§             User Role: All / Single role
+	• Task ID-011275 -Zishta- Iview rowfresh is not working for the current row for the script/action if the column countians the html tags.
+	• Task ID-011195 -Zishta-Requirement - User Require Iview/listview Column Freeze option In Definition Level.
+		○ Note: Apart from run time freeze column option in iviews, introduced freeze column property at column level during definition which can be used by solution developers as per the business/solution requirement.
+	• Task ID-011187 -Zishta- Requirement - In iView - user requires an option to Configure axrow option button position in iview Note - has to be kept anywhere, in between columns also
+		○ Note: A hyperlink introduced at column level definition to defined Row Options in desided columns. hyperlink will open the Row option definition form where the definition can be added as html which will be displayed as row option at run time.
+	• Task ID-011247 -Zishta- A column level new property has been introduced for displaying the Negative values in desired financial formats(Ex.: Native value Suffice with Cr, Suffice with Db or In brackets). 
+	• Task ID-011236 -Zishta- SQLPost from iView - the intended functionality was not working.
+	• Task ID-011274 -Dilmha- Error message 'Disconnected because you have logged into another session.' popups randomly for the limited user license.
+	• Task ID-011234 -Support- In the Pentagon Naturub project, there's an issue reported when attempting to log in as a non-default user. With the latest ASBMenu.dll, non-default users are unable to login.
+	• Task ID-011239 -QA- getSQLData API - In the response JSON, fieldname keys were not following identical case formats, making it hard to handle on the end-user side. As Mohan requested, we handled it the same way as with getchoices.
+	• Task ID-011245 -QA- Issue Description: The radio list appears duplicate at runtime when a user clicks the submit or new button in a form. 
+

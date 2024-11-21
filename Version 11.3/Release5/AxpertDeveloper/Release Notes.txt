@@ -1,0 +1,7 @@
+	
+Release Notes:
+============
+	• Task ID-010905 -Pay Azzure- Precondition - Create one simpletext Field,  Pattern as 'isalphanumeric' and other field as 'isalpha'
+	• Task ID-010901 - Dilmah - while trying to define a Eval function in developer for iview getting error - Invalid Input detected.
+	• Task ID-010125 - QA- The mail-related values are disappearing from the axprops table when the user updates or creates a new Axvariable.
+

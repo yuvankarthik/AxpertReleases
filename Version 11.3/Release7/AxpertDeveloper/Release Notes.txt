@@ -1,0 +1,12 @@
+Release Notes:
+============
+	• Task ID-011123 -QA- Axpert 11.3 save structure issues:
+		○ Normalized field values are set to zero whenever we save the structure
+			§ Note: Changing Normalized field to De Normalized will not allow if the transaction table having Normalized data.
+		○ Postgres - When decreasing width for normal field its cutting off data and saving
+			§ Note: Reducing data width will not allow if the transaction table having data.
+		○ Data type change will not allow if transaction table having data.
+	• Task ID-011084 -QA- In Iviews, Params Table Field is showing as Disabled.
+	• Task ID-011106 -QA- Unable to create a Param Iview with numeric and date columns
+	• Task ID-011130 -QA- Iview definition enhancement: Advance setting has been introduced for iview sub total.
+

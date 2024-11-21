@@ -1,0 +1,66 @@
+Release Notes:
+============
+	• Task ID-011425 -QA- Enhancement in Grid DC: Merging header columns enhancement. 
+		○  Note: To merge the header in grid dc's, the following steps needs to be followed.
+			§ There should be a field in header dc named as 'axp_colmerge_dcNumber' (save value false field).
+			§ The value of this field should be set as 'MergedColumnCaption~griddc field names' with defined field order
+				□ Ex.: If Dc2 is grid dc with fields fldA,fldB,fldC,fldD. If the columns fldB,fldC,fldD needs to merged, then 
+					® header dc should be having a field as 'axp_colmerge_2'
+					® This 'axp_colmerge_2' field value should be set as 'FldXYZ~fldB,fldC,fldD', where 'FldXYZ' is the caption for the merged columns. 
+	• Task ID-011350 -PayAzzure- Description : If Iview Contains Date & Numeric Field, in Downloaded excel Field type is taking as 'General'
+	• Task ID-011351 -PayAzzure- Description: If a user hides any column using 'axHideColumn', that hidden column still appears in the downloaded Excel file
+	• Task ID-011365 -PayAzzure- Requirement : Customized Field Captions should be shown in Exported excel
+	• Task ID-011368 -PayAzzure- Description: When users export more than 5000 records to Excel using the 'Export to Excel' feature, it takes a long time to generate Excel file
+	• Task ID-011350 -PayAzzure- Description : If Iview Contains Date & Numeric Field, in Downloaded excel Field type is taking as 'General'
+	• Task ID-011262 -PayAzzure- Description: In the Dev Site, if any Tstruct contains a view, an error "cannot alter the type of a column used by a view or rule " appears upon saving the form. 
+	• Task ID-011316 -PayAzzure-  FastReport Export - An option to export FastReport pages to Excel, with each page exported to a separate sheet (Please refer the attached Doc for more details)
+	• Task ID-011328 -Payazzure- Once the data is extracted from IView to Excel, the command shows 'Data submitted in queue successfully,'but the file is not downloading to the system, nor is it appearing in notifications.
+	• Task ID-011319 -PayAzzure- Description: Even through Arabic language is published through Axpert Languages, At runtime login with Arabic Language - Still Arabic language is not showing in that particular tstruc
+	• Task ID-011279 -PayAzzure- Description - Customized functionality is not working.In Country Pay Code Templates, After opening the same form a second time, the Flexi Eligibility Formula (axpformula) is displaying as Accept Field
+	• Task ID-011281 -PayAzzure- Requirement - User Requires Advance Search Option in MultiSelect
+	• Task ID-011280 -PayAzzure- Description -When User Open Employee Listing it is not Fetching records but in Pagination it is showing records Count
+	• Task ID-011267 -PayAzzure- Description - When user define SetFieldCaption() to any Field, if that field have any validation, in that error/Warning message "it is showing old Field name "
+	• Task ID-011253 -PayAzzure- Description : "axpbutton_actionname" is Not Working for Scripts in Web application
+		○ Note - axpbutton_action if same script is created in Desktop as Action then it is working in WEB
+	• Task ID-011369 -Zishta-  GenMap - GroupField is not working .
+	• Task ID-011315 -Zishta-  Issue Description: Barcode Scanning: When the user edits the quantity of a scanned item and then rescans the same item, the quantity is not being appended to the corresponding row in the grid
+	• Task ID-011284 -Zishta- Description: Barcode is not working as expected
+	• Task ID-011295 -Zishta- Description: Based on Scanned values, Gross value expression is not calculating
+		○ Note - On Entering Manual values Expression is calculating properly
+	• Task ID-011275 -Zishta- Iview rowfresh is not working for the current row for the script/action if the column countians the html tags.
+	• Task ID-011318 -CMIS- Issue Description: column merge in grid dc -- axp_colmerge_dcNumber is not working in Axpert 11.3
+	• Task ID-011297 -CMIS- Issue Description: Runtime- Iview- Word option Word document is not generating properly, after downloading report from utility/list at runtime
+		○ Note: Below QA team raise point fixed
+			§  Do you want to export Current record set or all records? (Loading all the records can take longer time than expected
+			§  Param Name and Values is not showing in Word Doc
+	• Task ID-011243 -CMIS- Issue Description: Runtime - Checklist After selecting a value from the checklist field, the previously selected value is visible and highlighted instead of the newly searched value in the list.
+	• Task ID-011283 -CMIS- Issue Description: CMIS Requirement: Track changes - User needs the caption name instead of field name on view History pop up at runtime.
+	• Task ID-011290 -CMIS- When a user clicks the loadform button in the second row of the grid DC, by default it is passing the first row value to the Popped Up Form
+	• Task ID-011298 -CMIS- Runtime- Iview- Unicode Word: document not generating properly when iview contains unicode after downloading report from utility/list at runtime
+		○ Note: To support Hindi/any other regional languages in MS Word, Hindi Unicode Font like Mangal, Arial Unicode MS, Aparajita ect.. font needs to be installed in the concerned systems.
+	• Task ID-011296 -CMIS- When the user loads the form using the iView hyperlink, it opens with data., if the same form is open from the menu, it opens in existing mode at runtime.
+	• Task ID-011299 -IMMS- Issue Description: Tstruct Grid DC having two row values with hyperlink- On Click of Button in Grid DC row1, It is passing the Second row value instead of first one
+	• Task ID-011312 -IMMS- Issue Description: Fillgrid- Row Level button Even though the row-level buttons are not visible in Grid DC after using the Fillgrid option to filling the data, the buttons in Grid DC are visible after loading the record from the list view.
+	• Task ID-011291 -BDF- Error while loading the transaction in iView -"Data Stored improper , Can Not load transaction"
+	• Task ID-011370 -Support(Pentagon) - The response content type from the ASBTStructRest DLL is coming as HTML instead of JSON. This issue was identified and reported by the Pentagon's Sampaths Bank project team.
+	• Task ID-011272 -QA- Iview Export enhancements: 1. Iview export to Excel has been moved to backend process through ARM if the iview displayed records more than page size. In this case a message 'Your request to export data is submitted successfully. You will be notified once the file is ready.' will be displayed to the user.2. Iview export to Word has been introduced
+		○ Note: Logs handled based 'show logs' on/off. If show logs is on then only export logs will generate.
+	• Task ID-011289 -QA- Issue Description: Tstruct listview is disappear when user click on the Word option from utility / list view menu at runtime.
+	• Task ID-011323 -QA- Description - When user define SetFieldCaption() to any Field, if that field have any server side validation, in that error/Warning message "it is showing old Field name"
+	• Task ID-011340 -QA- Export Excel through ARM Functionality is not working when Listview is having Pagination
+	• Task ID-011341 -QA- Description - When exporting from Iview/Listview to Excel, first click on the Excel file, then click on the 'Show All Records' icon to export the Excel file through ARM
+	• Task ID-011387 -QA- Enhancement: Export data is submitted in Queue and user try to submit again with same data for export before completing the previous request, system should popup a warning message as 'Previous request still in process. Please wait till you get the notification.'
+	• Task ID-011364 -QA- In the active list and notifications in Excel, notifications should display with the iView/ListView caption
+	• Task ID-011342 -QA- Issue Description: Runtime - Word document-Word document is generating without any Data for an iview with params (MOE as Select, Multiselect, Picklist)
+	• Task ID-011343 -QA- Issue Description: RUNTIME -Word option When iview is created with enabled 'Grand total' in Properties(dev site), in RUNTIME on click of Word option it's throwing an error message "Error Oops! there seems to be some problem. Please try later'
+	• Task ID-011344 -QA- Issue Description: When iview is created with 'Sub total' in dev site, in RUNTIME on click of Word option it's throwing an error message "Error.Oops! there seems to be some problem. Please try later'
+	• Task ID-011357 -QA- Issue Description: RUNTIME- word option When user creates a 'conditonal format' iview with and without params in dev site, in RUNTIME on click of Word option it's throwing an error message "Error Oops! there seems to be some problem. Please try later'
+	• Task ID-011371 -QA- Saving to the AxRelations table is not being done properly | reported by Abinash
+		○ Duplicate entries issue fixed
+		○ The From SQL field update has been handled as we discussed (based on master form & master field)
+	• Task ID-011310 -QA- Aximport-Dropdown validation Validation gets failed for dropdown field in aximport function. 
+	• Task ID-011305 -QA- Error Message Text change . In Aximport if a single record has multiple error data it has give error message with serial number wise and error message text has to be changed.
+	• Task ID-011352 -QA- Issue Description: Iview Data having &,<,> Special Characters are not showing properly in Exported Excel
+	• Task ID-011268 -Aximport- PrimaryField issue
+
+
